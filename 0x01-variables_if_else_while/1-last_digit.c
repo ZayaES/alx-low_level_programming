@@ -15,10 +15,6 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	while (n > 0)
-	{
-		n = n / 10;
-	}
 	i = n % 10;
 	if (i > 5)
 	{
