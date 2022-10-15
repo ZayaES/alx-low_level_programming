@@ -12,9 +12,9 @@ int main(void)
 {
 	char n;
 
-	for (n = 'e'; n <= 'z'; n++)
+	for (n = 'a'; n <= 'z'; n++)
 	{
-		if (n == 'a')
+		if (n == 'e')
 		{
 		}
 		else if (n == 'q')
