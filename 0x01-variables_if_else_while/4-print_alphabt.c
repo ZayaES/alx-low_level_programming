@@ -14,7 +14,7 @@ int main(void)
 
 	for (n = 'a'; n <= 'z'; n++)
 	{
-		while ((n != 'a') || (n != 'q'))
+		if ((n != 'a') || (n != 'q'))
 		{
 			putchar(n);
 		}
