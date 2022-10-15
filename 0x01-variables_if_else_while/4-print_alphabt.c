@@ -14,10 +14,17 @@ int main(void)
 
 	for (n = 'a'; n <= 'z'; n++)
 	{
-		if ((n != 'a') || (n != 'q'))
+		if (n == 'a')
+		{
+		}
+		else if (n == 'q')
+		{
+		}
+		else
 		{
 			putchar(n);
 		}
+
 	}
 	putchar('\n');
 	return (0);
