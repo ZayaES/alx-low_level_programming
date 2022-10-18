@@ -9,7 +9,7 @@
 int _islower(int c)
 {
 #include "main.h"
-{
+
 	if ((c >= 97) && (c <= 122))
 	{
 		return (1);
