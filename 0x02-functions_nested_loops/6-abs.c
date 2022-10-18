@@ -11,12 +11,12 @@ int _abs(int n)
 {
 #include "main.h"
 
-	if(n >= 0)
+	if (n >= 0)
 	{
 		return (n);
 	}
 	else
 	{
-		return (-1*n);
+		return (-1 * n);
 	}
 }
