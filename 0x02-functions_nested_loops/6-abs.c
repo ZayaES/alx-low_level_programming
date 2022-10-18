@@ -1,7 +1,7 @@
 /* #include "main.h" */
 
 /**
- * _abs - Checks if input is posirive, zero or negative
+ * _abs - return absolute value of a number
  * @n: First operand
  *
  * Return: 1 if positive, 0 if zero, -1 if negative
