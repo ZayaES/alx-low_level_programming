@@ -2,6 +2,7 @@
 
 /**
  * _islower - Checks if input is lowercase
+ * @c: First operand
  *
  * Return: 1 if lowercase, 0 else
 */
@@ -14,7 +15,7 @@ int _islower(int c)
 	{
 		return (1);
 	}
-	else 
+	else
 	{
 		return (0);
 	}
