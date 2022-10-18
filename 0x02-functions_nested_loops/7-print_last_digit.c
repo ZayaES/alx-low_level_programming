@@ -11,5 +11,9 @@ int print_last_digit(int n)
 {
 #include "main.h"
 
-	return (n % 10);
+	int c;
+       
+	c = n % 10;
+	_putchar('0'+c)
+	return (c);
 }
