@@ -7,7 +7,7 @@
  * Return: last digit of integer
 */
 
-void print_last_digit(int n)
+int print_last_digit(int n)
 {
 #include "main.h"
 
