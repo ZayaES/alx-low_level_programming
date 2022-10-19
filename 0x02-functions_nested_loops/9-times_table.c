@@ -19,8 +19,8 @@ void times_table(void)
 			print(c * i);
 			_putchar(',');
 			_putchar(' ');
-			_putchar('\n');
 		}
+		_putchar('\n');
 	}
 }
 
@@ -28,7 +28,7 @@ void print(int n)
 {
 #include "main.h"
 
-        if (n < 0)	
+	if (n < 0)	
 	{
 		_putchar('-');
 		n = -n;
