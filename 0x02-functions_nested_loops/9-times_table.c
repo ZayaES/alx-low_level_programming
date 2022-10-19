@@ -13,6 +13,8 @@ void times_table(void)
 	char d;
 	char c;
 
+	d = 5;
+
 	for (i = 0; i < 8; i++)
 	{
 		c = d * i;
