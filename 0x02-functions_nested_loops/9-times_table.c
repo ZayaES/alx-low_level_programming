@@ -9,20 +9,29 @@ void times_table(void)
 {
 #include "main.h"
 
-	char i;
-	char d;
-	char c;
+	int i;
+	int c;
 
-	d = 5;
-
-	for (i = 0; i < 8; i++)
+	for (i = 0; i < 9; i++)
 	{
-		c = d * i;
-		_putchar('0' + c);
-		_putchar(',');
-		_putchar(' ');
+		for (c = 0; c < 8; i++)
+		{
+			print(c * i);
+			_putchar(',');
+			_putchar(' ');
+		}
 	}
-	c = 9 * 9;
-	_putchar(c);
-	_putchar('$');
+
+void print(int n)
+{
+#include "main.h"
+
+        if (n < 0)	
+	{
+		_putchar('-');
+		n = -n;
+	}
+	if (n / 10)
+		print(n / 10);
+	_putchar(n % 10 + '0');
 }
