@@ -24,11 +24,18 @@ void times_table(void)
 	}
 }
 
+/**
+ * print - print numbers
+ * @n: First operand
+ *
+ * Return: 1 if lowercase, 0 else
+ */
+
 void print(int n)
 {
 #include "main.h"
 
-	if (n < 0)	
+	if (n < 0)
 	{
 		_putchar('-');
 		n = -n;
