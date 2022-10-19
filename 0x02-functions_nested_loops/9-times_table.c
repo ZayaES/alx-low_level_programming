@@ -19,6 +19,7 @@ void times_table(void)
 			print(c * i);
 			_putchar(',');
 			_putchar(' ');
+			_putchar('\n');
 		}
 	}
 }
