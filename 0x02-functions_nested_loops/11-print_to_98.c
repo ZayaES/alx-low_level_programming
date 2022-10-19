@@ -25,6 +25,8 @@ void print_to_98(int n)
 
 void print(int n)
 {
+#include "main.h"
+
 	if (n < 0)
 	{
 		_putchar('-');
