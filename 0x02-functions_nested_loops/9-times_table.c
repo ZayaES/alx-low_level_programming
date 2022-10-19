@@ -17,7 +17,7 @@ void times_table(void)
 		c = 9 * i;
 		_putchar(c);
 		_putchar(',');
-		_putchar(' ')
+		_putchar(' ');
 	}
 	c = 9 * 9;
 	_putchar(c);
