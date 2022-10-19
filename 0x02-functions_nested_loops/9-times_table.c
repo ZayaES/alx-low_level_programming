@@ -10,11 +10,11 @@ void times_table(void)
 #include "main.h"
 
 	char i;
-	char c;
+	char d;
 
 	for (i = 0; i < 8; i++)
 	{
-		c = 9 * i;
+		c = d * i;
 		_putchar(c);
 		_putchar(',');
 		_putchar(' ');
