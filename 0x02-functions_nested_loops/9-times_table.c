@@ -11,6 +11,7 @@ void times_table(void)
 
 	char i;
 	char d;
+	char c;
 
 	for (i = 0; i < 8; i++)
 	{
