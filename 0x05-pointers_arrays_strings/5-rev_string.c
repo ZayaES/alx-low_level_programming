@@ -30,6 +30,8 @@ void rev_string(char *s)
 		i--;
 		j = j + 1;
 	}
+	j = j;
+	i = i;
 	while (i <= j)
 	{
 	*(s + i) = *(c + i);
