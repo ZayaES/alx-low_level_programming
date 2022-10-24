@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - modifies a parameter, and keeps the value after the function
- * @n: poimter 
+ * @n: pointer
  * Return: nothing
  */
 
