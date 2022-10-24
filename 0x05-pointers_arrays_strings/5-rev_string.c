@@ -10,9 +10,10 @@ void rev_string(char *s)
 {
 	int i;
 	int j;
+	char u;
 	char *c;
 
-	c = &s;
+	c = &u;
 	i = 0;
 	j = 0;
 
@@ -28,4 +29,5 @@ void rev_string(char *s)
 		i--;
 		j++;
 	}
+	*(s + i) = *(c + i);
 }
