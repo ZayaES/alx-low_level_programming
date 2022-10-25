@@ -21,5 +21,5 @@ int *_atoi(char *s)
 	{
 		*(a + j) = (*(s + j) - 0x30);
 	}
-	return (*a);
+	return (a);
 }
