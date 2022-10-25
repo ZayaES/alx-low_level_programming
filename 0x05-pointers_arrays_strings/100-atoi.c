@@ -1,4 +1,5 @@
 #include "main.h"
+#include <math.h>
 
 /**
  * _atoi - covert strings to int
@@ -22,7 +23,7 @@ int _atoi(char *s)
 	k = i;
 	for (j = 0; j < k - 1; j++)
 	{
-		u = u + (*(s + i) - 0x30)  * 10; /*** j;*/
+		u = u + (*(s + i) - 0x30)  * pow(10, j); ; /*** j;*/
 		i--;
 	}
 	return (u);
