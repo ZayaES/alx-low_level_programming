@@ -13,6 +13,8 @@ int _atoi(char *s)
 	int k;
 	char u = 0;
 
+	i =0;
+
 	while (*(s + i) != '\0')
 	{
 		i++;
@@ -20,8 +22,8 @@ int _atoi(char *s)
 	k = i;
 	for (j = 0; j < k - 1; j++)
 	{
-		u = u + (*(s + i));/* * (10 ** j);*/
+		u = u + (*(s + i)) * (10 ** j);
 		i--;
 	}
-	return (i);
+	return (u);
 }
