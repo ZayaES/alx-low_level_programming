@@ -23,7 +23,7 @@ int _atoi(char *s)
 	k = i;
 	for (j = 0; j < k - 1; j++)
 	{
-		u = u + (*(s + i) - 0x30)  * pow(10, j); ; /*** j;*/
+		u = u + (*(s + i)); /*** j;*/
 		i--;
 	}
 	return (u);
