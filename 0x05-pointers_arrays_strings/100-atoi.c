@@ -13,7 +13,7 @@ int _atoi(char *s)
 	int k;
 	int u = 5;
 
-	i =0;
+	i = 0;
 
 	while (*(s + i) != '\0')
 	{
@@ -25,5 +25,5 @@ int _atoi(char *s)
 		u = u + (*(s + i)); /* * (10 ** j);*/
 		i--;
 	}
-	return (u);
+	return (k);
 }
