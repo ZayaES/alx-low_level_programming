@@ -22,8 +22,8 @@ int _atoi(char *s)
 	k = i;
 	for (j = 0; j < k - 1; j++)
 	{
-		u = u + (*(s + i)) * (10 ** j);
+		u = u + (*(s + i)); /* * (10 ** j);*/
 		i--;
 	}
-	return (i);
+	return (u);
 }
