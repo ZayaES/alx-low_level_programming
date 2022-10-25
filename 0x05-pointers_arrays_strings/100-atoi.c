@@ -10,16 +10,19 @@ int *_atoi(char *s)
 {
 	int i;
 	int j;
-	int u[1000];
-	int *a = u;
+	int k;
+	int u = 0;
+	int *a;
 
 	while (*(s + i) != '\0')
 	{
 		i++;
 	}
-	for (j = 0; j < i - 1; j++)
+	k = i;
+	for (j = 0; j < k - 1; j++)
 	{
-		*(a + j) = (*(s + j) - 0x30);
+		u = u + (*(s + i)) * (10 ** j);
+		i--;
 	}
-	return (a);
+	return (u);
 }
