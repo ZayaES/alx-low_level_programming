@@ -12,5 +12,5 @@ int main(void)
 
 	i = rand();
 
-	return (0);
+	return (i);
 }
