@@ -9,6 +9,7 @@
 int _atoi(char *s)
 {
 	int i;
+	int j;
 	int u;
 	int *a = &u;
 
