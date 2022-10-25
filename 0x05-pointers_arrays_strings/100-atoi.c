@@ -12,7 +12,6 @@ int _atoi(char *s)
 	int j;
 	int k;
 	int u = 0;
-	int *a;
 
 	while (*(s + i) != '\0')
 	{
