@@ -10,8 +10,8 @@ int _atoi(char *s)
 {
 	int i;
 	int j;
-	int u;
-	int *a = &u;
+	int u[1000];
+	int *a = u;
 
 	while (*(s + i) != '\0')
 	{
