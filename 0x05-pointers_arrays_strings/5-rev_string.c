@@ -13,7 +13,7 @@ void rev_string(char *s)
 	char u[1000];
 	char *c;
 
-	c = &u;
+	c = u;
 	i = 0;
 	j = 0;
 
