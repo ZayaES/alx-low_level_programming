@@ -14,6 +14,7 @@ char *_strcat(char *dest, char *src)
 	int k;
 	int l;
 
+	i = 0;
 	while (*(dest + i) != '\0')
 	{
 		i++;
@@ -31,5 +32,5 @@ char *_strcat(char *dest, char *src)
 		*(dest + k) = *(src + l);
 		l++;
 	}
-	return (*dest);
+	return (dest);
 }
