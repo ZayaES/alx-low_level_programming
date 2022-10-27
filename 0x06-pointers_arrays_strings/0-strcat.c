@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * strcat - concatenate two strings
+ * _strcat - concatenate two strings
  * @dest: destinarion pointer
  * @src: sorce pointer
  * Return: dest
