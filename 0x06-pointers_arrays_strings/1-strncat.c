@@ -5,17 +5,19 @@
  * @dest: dest ptr
  * @src: src ptr
  * @n: max byte spexifier
+ *
  * Return: dest
  */
 
 char *_strncat(char *dest, char *src, int n)
 {
 	int i;
-        int j;
+	int j;
 	int k;
 	int l;
 
 	i = 0;
+	
 	while (*(dest + i) != '\0')
 	{
 		i++;
