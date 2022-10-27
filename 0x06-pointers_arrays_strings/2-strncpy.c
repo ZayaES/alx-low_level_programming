@@ -22,9 +22,12 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		*(dest + j) = *(src + j);
 	}
-	for ( ; i <= n; i++)
+	if (i < n)
 	{
-		*(dest + j) = '\0';
+		for ( ; i <= n; i++)
+		{
+			*(dest + j) = '\0';
+		}
 	}
 	return (dest);
 }
