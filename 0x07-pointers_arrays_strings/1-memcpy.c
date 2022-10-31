@@ -3,7 +3,7 @@
 /**
  * _memcpy - copy memory from src to dest
  * @dest: copied to
- * src: copied from
+ * @src: copied from
  * @n: place value
  * Return: dest
  */
