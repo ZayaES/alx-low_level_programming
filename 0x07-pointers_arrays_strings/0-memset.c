@@ -5,6 +5,7 @@
  * @s:buffer to be reset
  * @b: character that'd act as reseter
  * @n: place to reset to
+ * Return: s
  */
 
 char *_memset(char *s, char b, unsigned int n)
