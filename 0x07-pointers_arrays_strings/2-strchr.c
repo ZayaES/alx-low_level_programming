@@ -18,6 +18,10 @@ char *_strchr(char *s, char c)
 		i++;
 	}
 	ptr = s + i;
+	if (*(s + i + 1) == '\0')
+	{
+		ptr = NULL;
+	}
 
 	return (ptr);
 }
