@@ -27,7 +27,7 @@ void shift_ptr(char *s, int i)
 		if (*(s) != '\0')
 		{
 			s++;
-			shift_ptr(s);
+			shift_ptr(s, 1);
 		}
 		i--;
 	}
