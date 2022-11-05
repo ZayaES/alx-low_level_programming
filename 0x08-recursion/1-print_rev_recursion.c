@@ -2,13 +2,13 @@
 
 /**
  * _print_rev_recursion - prints string in reverse
- * @c: string
+ * @s: string
  * Return: void
  */
 
 void _print_rev_recursion(char *s)
 {
-	if(*s != '\0')
+	if (*s != '\0')
 	{
 		_print_rev_recursion(s + 1);
 	}
@@ -17,6 +17,7 @@ void _print_rev_recursion(char *s)
 		s--;
 		_putchar(*s);
 		*s = '\0';
+		_putchar(*s);
 		_print_rev_recursion(s);
 	}
 }
