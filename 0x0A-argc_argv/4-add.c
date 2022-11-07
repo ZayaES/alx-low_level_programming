@@ -17,17 +17,20 @@ int main(int argc, char *argv[])
 
 	while (i < argc)
 	{
-		if (atoi(argv[i]) >= 0)
+		if (atoi(argv[i]))
 		{
-			x = x + atoi(argv[i]);
-			i++;
+			if (atoi(argv[i]) >= 0)
+			{
+				x = x + atoi(argv[i]);
+				i++;
+			}
+			else
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
 		else
-		{
-			printf("Error\n");
-			return (1);
-		}
-		if (!(atoi(argv[i])))
 		{
 			printf("Error\n");
 			return (1);
