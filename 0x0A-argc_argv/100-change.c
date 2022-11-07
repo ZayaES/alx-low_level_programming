@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * main - finds minimem count of coin 
+ * main - finds minimem count of coin
  * @argc: argument count
  * @argv: vector
  * Return: 0
@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	int change;
 	int n;
 
-	change = atoi(argv [1]);
+	change = atoi(argv[1]);
 	n = 0;
 	i = 0;
 
@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 		{
 			while (change != 0)
 			{
-				n = n + change / cent[i];		
+				n = n + change / cent[i];
 				change = change % cent[i];
 				i++;
 			}
