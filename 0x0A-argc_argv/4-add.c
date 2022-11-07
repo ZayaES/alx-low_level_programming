@@ -24,11 +24,11 @@ int main(int argc, char *argv[])
 				x = x + atoi(argv[i]);
 				i++;
 			}
-			/*else
+			else
 			{
 				printf("Error\n");
 				return (1);
-			}*/
+			}
 		}
 		else
 		{
