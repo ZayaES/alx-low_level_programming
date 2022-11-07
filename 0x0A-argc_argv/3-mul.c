@@ -12,13 +12,20 @@ int main(int argc, char *argv[])
 {
 	if (argc > 2)
 	{
-		int y;
-		int x;
+		int *x;
+		int *y;
+		int a;
+		int b;
 
-		x = argv[1];
-		y = argv[2];
+		x = (int *) &argv[1];
+		y = (int *) &argv[2];
+		*x = (int) *argv[1];
+		*y = (int) *argv[2];
+		a = *(x) - 48;
+		b = *y - 48;
 
-		printf("%d\n", x * y);
+		printf("%d, %d\n", a, b);
+		printf("%d\n", a * b);
 		return (0);
 	}
 	else
