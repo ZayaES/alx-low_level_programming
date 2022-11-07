@@ -16,12 +16,13 @@ int main(int argc, char *argv[])
 	int change;
 	int n;
 
-	change = atoi(argv[1]);
-	n = 0;
-	i = 0;
 
 	if (argc == 2)
 	{
+		change = atoi(argv[1]);
+		n = 0;
+		i = 0;
+
 		if (change > 0)
 		{
 			while (change != 0)
