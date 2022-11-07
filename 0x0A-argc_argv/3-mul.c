@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - prints the arguments to the function
@@ -12,20 +13,13 @@ int main(int argc, char *argv[])
 {
 	if (argc > 2)
 	{
-		int *x;
-		int *y;
-		int a;
-		int b;
+		int x;
+		int y;
 
-		x = (int *) &argv[1];
-		y = (int *) &argv[2];
-		*x = (int) *argv[1];
-		*y = (int) *argv[2];
-		a = *(x) - 48;
-		b = *y - 48;
-
-		printf("%d, %d\n", a, b);
-		printf("%d\n", a * b);
+		x = atoi(argv[1]);
+		y = atoi(argv[2]);
+		printf("%d, %d\n", x, y);
+		printf("%d\n", x * y);
 		return (0);
 	}
 	else
