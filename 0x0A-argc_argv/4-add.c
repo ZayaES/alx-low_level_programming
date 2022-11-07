@@ -27,6 +27,11 @@ int main(int argc, char *argv[])
 			printf("Error\n");
 			return (1);
 		}
+		if (!(atoi(argv[i])))
+		{
+			printf("Error\n");
+			return (1);
+		}
 	}
 	if (argc >= 1)
 	{
