@@ -8,12 +8,8 @@
  * Return: 0 (success)
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char *argv[]__attribute__((unused)))
 {
-	if ((argc - 1) != 0)
-	{
-		argv[0] = argv[argc - 1];
-	}
 	printf("%d\n", argc);
 	return (0);
 }
