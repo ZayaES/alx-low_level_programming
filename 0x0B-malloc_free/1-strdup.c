@@ -12,9 +12,8 @@ char *_strdup(char *str)
 {
 	int i;
 	char *ptr;
-	char array[] = str;
 
-	ptr = malloc(sizeof(array));
+	ptr = malloc(sizeof(str));
 	if ((ptr == NULL) || (str == NULL))
 	{
 		return (NULL);
