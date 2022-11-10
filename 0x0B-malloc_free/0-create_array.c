@@ -11,8 +11,7 @@ char *create_array(unsigned int size, char c)
 {
 	unsigned long int i;
 	char *ptr;
-	size = 98;
-	char array[size];
+	char array[98];
 
 	if (size != 0)
 	{
