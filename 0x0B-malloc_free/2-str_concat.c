@@ -28,11 +28,21 @@ char *str_concat(char *s1, char *s2)
 	i = 0;
 	if (s1 == NULL)
 	{
-		*(s1 + i) = '\0';
+		while (*(s2 + i) != '\0')
+		{
+			*(ptr + i) = *(s2 + i);
+			i++;
+		}
+		return (ptr);
 	}
 	else if (s2 == NULL)
-	{
-		*(s2 + i) = '\0';
+	{	
+		while (*(s1 + i) != '\0')
+		{
+			*(ptr + i) = *(s1 + i);
+			i++;
+		}
+		return (ptr);
 	}
 	while (*(s1 + i) != '\0')
 	{
