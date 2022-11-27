@@ -1,8 +1,15 @@
 #include "lists.h"
 
+/**
+ * print_list - prints elements of a list
+ * @h: the start point
+ * Return: number of lements
+ */
+
 size_t print_list(const list_t *h)
 {
 	int i = 0;
+
 	while (h != NULL)
 	{
 		if (h->str == NULL)
