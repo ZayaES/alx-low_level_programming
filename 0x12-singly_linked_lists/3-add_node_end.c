@@ -2,7 +2,7 @@
 
 /**
  * add_node_end - creates a neew nosde at the end of a list
- * @ead: pointer to pinter to the head node
+ * @head: pointer to pinter to the head node
  * @str: string to write to new node
  * Return: address to the new tail node
  */
