@@ -1,12 +1,12 @@
 #include "lists.h"
 
 /**
- * print_listint_len - prints elements of a list
+ * listint_len - prints elements of a list
  * @h: the start point
  * Return: number of nodes
  */
 
-size_t print_listint_len(const listint_t *h)
+size_t listint_len(const listint_t *h)
 {
 	int i = 0;
 
