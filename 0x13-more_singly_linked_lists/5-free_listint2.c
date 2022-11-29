@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * free_listint - frees entire allocation of a list
+ * free_listint2 - frees entire allocation of a list
  * @head: head of list input
  * Return: void
  */
