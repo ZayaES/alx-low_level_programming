@@ -8,6 +8,8 @@
 
 int pop_listint(listint_t **head)
 {
+	if (*head = NULL)
+		return (NULL);
 	int data = ((*head)->n);
 	listint_t *nextnode;
 
