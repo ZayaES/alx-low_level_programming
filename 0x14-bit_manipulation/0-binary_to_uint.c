@@ -11,6 +11,7 @@ unsigned int binary_to_uint(const char *b)
 	int i, j;
 	unsigned int x;
 	unsigned int u;
+
 	i = 0;
 	u = 0;
 	while (*(b + i) != '\0')
@@ -27,6 +28,13 @@ unsigned int binary_to_uint(const char *b)
 
 	return (u);
 }
+
+/**
+ * _power - calculates the power of number
+ * @base: number to find its power
+ * @exp: the nth power(exponent)
+ * Return: power
+ */
 
 unsigned int _power(unsigned int base, unsigned int exp)
 {
