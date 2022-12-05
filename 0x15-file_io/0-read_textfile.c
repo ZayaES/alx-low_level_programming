@@ -26,6 +26,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	close(fd);
 
 	count = write(1, buf, rd);
+	close(1);
+
 	if ((count) < (rd))
 		return (0);
 
