@@ -19,17 +19,17 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 	if (text_content == NULL)
 	{
-		close (fd);
+		close(fd);
 		return (0);
 	}
 	wr = write(fd, text_content, strlen(text_content));
 	if (wr < 0)
 	{
-		close (fd);
+		close(fd);
 		return (-1);
 	}
 
-	close (fd);
+	close(fd);
 
-	return (0);
+	return (1);
 }
