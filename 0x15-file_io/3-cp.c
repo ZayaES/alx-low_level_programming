@@ -1,26 +1,38 @@
 #include "main.h"
 
 /**
+ * main - takes arguments, copies
+ * @argc: arg count
+ * @argv: argument string
+ * Return: 0
  */
 
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	if (argc != 3)
 	{
 		dprintf(2, "Usage: cp file_from file_to\n");
-		exit (97);
+		exit(97);
 	}
-	cp (argv[1], argv[2]);
+	cp(argv[1], argv[2]);
 
 	return (0);
 }
 
-void cp (char *file_from, char *file_to)
+/**
+ * cp - copies file_from to file_to
+ * @file_from: source
+ * @file_to: dest
+ * Return: void
+ */
+
+void cp(char *file_from, char *file_to)
 {
 	int fd, fd2, cl, cl2;
 	ssize_t rd, wr;
 	char *buf;
 
+	rd = 0;
 	buf = malloc(sizeof(char) * 1024);
 	fd = open(file_from, O_RDWR);
 	rd = read(fd, buf, 1024);
