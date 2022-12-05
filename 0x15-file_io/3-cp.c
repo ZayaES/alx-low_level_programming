@@ -32,21 +32,24 @@ void cp(char *file_from, char *file_to)
 	ssize_t rd, wr;
 	char *buf;
 
-	rd = 0;
+	rd = 1024;
 	buf = malloc(sizeof(char) * 1024);
 	fd = open(file_from, O_RDWR);
-	rd = read(fd, buf, 1024);
-	if (rd < 0)
-	{
-		dprintf(2, "Error: Can't read from %s\n", file_from);
-		exit(98);
-	}
 	fd2 = open(file_to, O_RDWR | O_CREAT | O_TRUNC, 0644);
-	wr = write(fd2, buf, rd);
-	if (wr < 0)
+	while (rd == 1024)
 	{
-		dprintf(2, "Error: Can't write to %s\n", file_from);
-		exit(99);
+		rd = read(fd, buf, 1024);
+		if (rd < 0)
+		{
+			dprintf(2, "Error: Can't read from %s\n", file_from);
+			exit(98);
+		}
+		wr = write(fd2, buf, rd);
+		if (wr < 0)
+		{
+			dprintf(2, "Error: Can't write to %s\n", file_from);
+			exit(99);
+		}
 	}
 	cl = close(fd);
 	if (cl == -1)
