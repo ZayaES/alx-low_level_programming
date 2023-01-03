@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _isupper - 
+ * _isupper - yg
  * @c: yh
  * Return: yh
  */

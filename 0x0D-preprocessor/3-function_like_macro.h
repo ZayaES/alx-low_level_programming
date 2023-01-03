@@ -1,7 +1,13 @@
+#include <stdio.h>
 #ifndef ABS
-#if x >= 0
 #define ABS(x) (x)
-#elif x < 0
-#define ABS(x) (-x)
-#endif
+int main(void)
+{
+	if (ABS(x) < 0)
+	{
+		#undef ABS
+
+		#define ABS(x) (-x)
+	}
+}
 #endif

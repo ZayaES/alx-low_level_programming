@@ -26,24 +26,7 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 	i = 0;
-	if (*(s1 + 0) == NULL)
-	{
-		while (*(s2 + i) != '\0')
-		{
-			*(ptr + i) = *(s2 + i);
-			i++;
-		}
-		return (ptr);
-	}
-	else if (s2 == NULL)
-	{	
-		while (*(s1 + i) != '\0')
-		{
-			*(ptr + i) = *(s1 + i);
-			i++;
-		}
-		return (ptr);
-	}
+
 	while (*(s1 + i) != '\0')
 	{
 		*(ptr + i) = *(s1 + i);
